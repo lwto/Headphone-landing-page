@@ -65,3 +65,26 @@ function scrollActive() {
     })
 }
 window.addEventListener('scroll', scrollActive);
+
+//Scroll Reveal animation
+const sr = ScrollReveal({
+    distance: '60px',
+    duration: 2000,
+    delay: 400,
+    reset: true
+})
+
+sr.reveal(`.home_header, .section_title`, { delay: 600 })
+sr.reveal(`.home_footer`, { delay: 700 })
+sr.reveal(`.home_img`, { delay: 900, origin: 'top' })
+
+sr.reveal(`.sponsor_img, .products_card, .footer_logo, .footer_content, .footer_copy`, { origin: 'top', interval: 100 })
+sr.reveal(`.specs_data, .discount_animate`, { origin: 'left', interval: 100 })
+sr.reveal(`.specs_img, .discount_img`, { origin: 'right' })
+
+sr.reveal(`.case_img`, { origin: 'top' })
+sr.reveal(`.case_data`)
+
+
+
+
